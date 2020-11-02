@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
+import org.testng.ITestResult;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -13,6 +14,7 @@ import com.gmail.pageObjectsAndMethods.ComposePage;
 import com.gmail.pageObjectsAndMethods.LoginPage;
 import com.gmail.utilities.CustomisedException;
 import com.gmail.utilities.ExcelReadWrite_API;
+import com.gmail.utilities.ScreenShot;
 import com.gmail.utilities.TestFunctionsFactory;
 
 public class TC_ComposeMail_001 extends BaseClass{
@@ -30,7 +32,7 @@ public class TC_ComposeMail_001 extends BaseClass{
 		excelObj=new ExcelReadWrite_API();
 
 		mapref=excelObj.excelReadWrite(TC);
-		
+		ScreenShot screenObj=new ScreenShot();
 			//Login		
 			LoginPage loginPage=new LoginPage(driver);
 			loginPage.login(driver, mapref);
@@ -38,11 +40,7 @@ public class TC_ComposeMail_001 extends BaseClass{
 			//Compose mail
 			ComposePage composePage=new ComposePage(driver);
 			composePage.composemail(driver, mapref);
-			/*composePage.actions("Compose");
-			composePage.enterDetails("To_TextBox", mapref.get("To_EmailID"));
-			composePage.enterDetails("Subject", mapref.get("Subject"));
-			composePage.enterDetails("EmailBody", mapref.get("EmailContent"));			
-			composePage.actions("Send");*/
+			
 			TestFunctionsFactory.waitForPageLoaded(driver);
 			
 			//Sent Item Verification
@@ -57,12 +55,11 @@ public class TC_ComposeMail_001 extends BaseClass{
 			boolean blnPass = composePage.findMail("Received Mail", "First Mail");
 			
 			if (blnPass==true || sentItemVerification==true)
-				ExtentTestManager.getTest().log(Status.PASS,"Sending and Receiving mail is successfull");		
+				ExtentTestManager.getTest().log(Status.PASS,"Sending and Receiving mail is successfull");                			
 			else
 				ExtentTestManager.getTest().log(Status.FAIL,"Sending mail not successfull");
 			
-			//logout
-			loginPage.logout(driver);
+			
 		
 	} catch (CustomisedException e) {
 	
@@ -72,5 +69,6 @@ public class TC_ComposeMail_001 extends BaseClass{
 	
 	}
 	}
+	
 	
 }

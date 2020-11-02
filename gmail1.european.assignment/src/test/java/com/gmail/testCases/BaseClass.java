@@ -18,8 +18,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
+import com.aventstack.extentreports.Status;
 import com.gmail.ReportConfiguration.ExtentManager;
 import com.gmail.ReportConfiguration.ExtentTestManager;
+import com.gmail.pageObjectsAndMethods.LoginPage;
 import com.gmail.utilities.CustomisedException;
 import com.gmail.utilities.ExcelReadWrite_API;
 import com.gmail.utilities.ReadConfig;
@@ -42,13 +44,13 @@ public class BaseClass{
 		ExtentManager.createInstance();
 	}
 	
-	@Parameters({"browser","TestCase_Name2"})
+	@Parameters({"browser","TestCase_Name1"})
 	@BeforeClass
 	public void setup(String browser,String tc,ITestContext testContext) throws Exception 
 	{
 		System.out.println("test1");
 		try {
-			
+						
 		switch (browser.toUpperCase()) {
 		
 		case "CHROME":
@@ -91,17 +93,28 @@ public class BaseClass{
 		catch(Exception e)
 		{
 			e.printStackTrace();
+			ExtentTestManager.getTest().log(Status.PASS,"login not successfull");
 		}
 	}
 
 	
 	@AfterClass
-	public void teardown()
+	public void teardown() throws CustomisedException
 	{
+		try {
+		LoginPage loginPage=new LoginPage(driver);
+		//logout
+		loginPage.logout(driver);
 		driver.quit();
 		ExtentTestManager.endTest();
-
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+			ExtentTestManager.getTest().log(Status.FAIL,"logout not successfull");
+		}
 	}
+		
 	
 	
 }

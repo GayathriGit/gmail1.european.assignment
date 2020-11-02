@@ -54,8 +54,7 @@ public class TC_DraftandSendMail_003 extends BaseClass{
 			else
 				ExtentTestManager.getTest().log(Status.FAIL,"Draft,sending and Receiving mail not successfull");
 			
-			//logout
-			loginPage.logout(driver);
+			
 		
 	} catch (CustomisedException e) {
 	

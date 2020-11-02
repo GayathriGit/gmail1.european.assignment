@@ -54,8 +54,7 @@ public class TC_ReplyMail_002 extends BaseClass{
 			else
 				ExtentTestManager.getTest().log(Status.FAIL,"Reply mail not successfull");
 		    
-			//logout
-			loginPage.logout(driver);
+			
 			
 	} catch (CustomisedException e) {
 	
