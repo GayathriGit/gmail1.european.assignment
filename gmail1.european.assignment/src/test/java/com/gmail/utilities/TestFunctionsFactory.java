@@ -75,19 +75,25 @@ public class TestFunctionsFactory {
 		}
 
 	}
-public static void waitForElementVisible(WebDriver driver,WebElement element,int waitTime) throws CustomisedException {
-	try {
-
-		WebDriverWait wait=new WebDriverWait(driver,waitTime);
-		wait.until(ExpectedConditions.visibilityOf(element));
-	} catch (Exception e) {
-		e.printStackTrace();
-		ExtentTestManager.getTest().log(Status.FAIL, "Element is not displayed");
-		CustomisedException obj = new CustomisedException(element.toString(), e.getMessage().toString());
-
-		throw obj;
+	
+	/* 
+	 * @param element
+	 * 
+	 * @throws CustomisedException
+	 */
+	public static void waitForElementVisible(WebDriver driver,WebElement element,int waitTime) throws CustomisedException {
+		try {
+	
+			WebDriverWait wait=new WebDriverWait(driver,waitTime);
+			wait.until(ExpectedConditions.visibilityOf(element));
+		} catch (Exception e) {
+			e.printStackTrace();
+			ExtentTestManager.getTest().log(Status.FAIL, "Element is not displayed");
+			CustomisedException obj = new CustomisedException(element.toString(), e.getMessage().toString());
+	
+			throw obj;
+		}
 	}
-}
 	/*
 	 * @param element
 	 * 
