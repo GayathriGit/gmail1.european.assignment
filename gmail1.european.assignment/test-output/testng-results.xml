@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="366960" started-at="2020-11-02T11:57:47Z" finished-at="2020-11-02T12:03:54Z">
+  <suite name="Suite" duration-ms="359977" started-at="2020-11-02T15:19:39Z" finished-at="2020-11-02T15:25:39Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="134198" started-at="2020-11-02T11:57:47Z" finished-at="2020-11-02T12:00:02Z">
+    <test name="Test" duration-ms="113109" started-at="2020-11-02T15:19:39Z" finished-at="2020-11-02T15:21:32Z">
       <class name="com.gmail.testCases.TC_ComposeMail_001">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.gmail.testCases.TC_ComposeMail_001@327b636c]" name="setup" is-config="true" duration-ms="7658" started-at="2020-11-02T11:57:47Z" finished-at="2020-11-02T11:57:55Z">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.gmail.testCases.TC_ComposeMail_001@327b636c]" name="setup" is-config="true" duration-ms="6787" started-at="2020-11-02T15:19:39Z" finished-at="2020-11-02T15:19:46Z">
           <params>
             <param index="0">
               <value>
@@ -16,7 +16,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[TC_ReplyMail_002]]>
+                <![CDATA[TC_ComposeMail_001]]>
               </value>
             </param>
             <param index="2">
@@ -28,7 +28,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="composeMail(java.lang.String)[pri:0, instance:com.gmail.testCases.TC_ComposeMail_001@327b636c]" name="composeMail" duration-ms="122506" started-at="2020-11-02T11:57:55Z" finished-at="2020-11-02T11:59:58Z">
+        <test-method status="PASS" signature="composeMail(java.lang.String)[pri:0, instance:com.gmail.testCases.TC_ComposeMail_001@327b636c]" name="composeMail" duration-ms="91767" started-at="2020-11-02T15:19:46Z" finished-at="2020-11-02T15:21:18Z">
           <params>
             <param index="0">
               <value>
@@ -39,15 +39,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- composeMail -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.gmail.testCases.TC_ComposeMail_001@327b636c]" name="teardown" is-config="true" duration-ms="3331" started-at="2020-11-02T11:59:58Z" finished-at="2020-11-02T12:00:02Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.gmail.testCases.TC_ComposeMail_001@327b636c]" name="teardown" is-config="true" duration-ms="13417" started-at="2020-11-02T15:21:19Z" finished-at="2020-11-02T15:21:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.gmail.testCases.TC_ComposeMail_001 -->
     </test> <!-- Test -->
-    <test name="Test1" duration-ms="83822" started-at="2020-11-02T12:00:02Z" finished-at="2020-11-02T12:01:26Z">
+    <test name="Test1" duration-ms="132878" started-at="2020-11-02T15:21:33Z" finished-at="2020-11-02T15:23:46Z">
       <class name="com.gmail.testCases.TC_ReplyMail_002">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.gmail.testCases.TC_ReplyMail_002@22635ba0]" name="setup" is-config="true" duration-ms="10130" started-at="2020-11-02T12:00:02Z" finished-at="2020-11-02T12:00:12Z">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.gmail.testCases.TC_ReplyMail_002@22635ba0]" name="setup" is-config="true" duration-ms="14124" started-at="2020-11-02T15:21:33Z" finished-at="2020-11-02T15:21:47Z">
           <params>
             <param index="0">
               <value>
@@ -56,7 +56,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[TC_ReplyMail_002]]>
+                <![CDATA[TC_ComposeMail_001]]>
               </value>
             </param>
             <param index="2">
@@ -68,7 +68,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="replyMail(java.lang.String)[pri:0, instance:com.gmail.testCases.TC_ReplyMail_002@22635ba0]" name="replyMail" duration-ms="70703" started-at="2020-11-02T12:00:12Z" finished-at="2020-11-02T12:01:23Z">
+        <test-method status="PASS" signature="replyMail(java.lang.String)[pri:0, instance:com.gmail.testCases.TC_ReplyMail_002@22635ba0]" name="replyMail" duration-ms="58955" started-at="2020-11-02T15:21:47Z" finished-at="2020-11-02T15:22:46Z">
           <params>
             <param index="0">
               <value>
@@ -79,19 +79,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- replyMail -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.gmail.testCases.TC_ReplyMail_002@22635ba0]" name="teardown" is-config="true" duration-ms="2466" started-at="2020-11-02T12:01:23Z" finished-at="2020-11-02T12:01:26Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.gmail.testCases.TC_ReplyMail_002@22635ba0]" name="teardown" is-config="true" duration-ms="59407" started-at="2020-11-02T15:22:46Z" finished-at="2020-11-02T15:23:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.gmail.testCases.TC_ReplyMail_002 -->
     </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="148259" started-at="2020-11-02T12:01:26Z" finished-at="2020-11-02T12:03:54Z">
+    <test name="Test2" duration-ms="113029" started-at="2020-11-02T15:23:46Z" finished-at="2020-11-02T15:25:39Z">
       <class name="com.gmail.testCases.TC_DraftandSendMail_003">
-        <test-method status="PASS" signature="intialSetup()[pri:0, instance:com.gmail.testCases.TC_DraftandSendMail_003@70be0a2b]" name="intialSetup" is-config="true" duration-ms="381" started-at="2020-11-02T11:57:47Z" finished-at="2020-11-02T11:57:47Z">
+        <test-method status="PASS" signature="intialSetup()[pri:0, instance:com.gmail.testCases.TC_DraftandSendMail_003@70be0a2b]" name="intialSetup" is-config="true" duration-ms="168" started-at="2020-11-02T15:19:39Z" finished-at="2020-11-02T15:19:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialSetup -->
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.gmail.testCases.TC_DraftandSendMail_003@70be0a2b]" name="setup" is-config="true" duration-ms="5923" started-at="2020-11-02T12:01:26Z" finished-at="2020-11-02T12:01:32Z">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.gmail.testCases.TC_DraftandSendMail_003@70be0a2b]" name="setup" is-config="true" duration-ms="7537" started-at="2020-11-02T15:23:46Z" finished-at="2020-11-02T15:23:53Z">
           <params>
             <param index="0">
               <value>
@@ -100,7 +100,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[TC_ReplyMail_002]]>
+                <![CDATA[TC_ComposeMail_001]]>
               </value>
             </param>
             <param index="2">
@@ -112,7 +112,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="composeMail(java.lang.String)[pri:0, instance:com.gmail.testCases.TC_DraftandSendMail_003@70be0a2b]" name="composeMail" duration-ms="138298" started-at="2020-11-02T12:01:32Z" finished-at="2020-11-02T12:03:50Z">
+        <test-method status="PASS" signature="composeMail(java.lang.String)[pri:0, instance:com.gmail.testCases.TC_DraftandSendMail_003@70be0a2b]" name="composeMail" duration-ms="89542" started-at="2020-11-02T15:23:53Z" finished-at="2020-11-02T15:25:23Z">
           <params>
             <param index="0">
               <value>
@@ -123,7 +123,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- composeMail -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.gmail.testCases.TC_DraftandSendMail_003@70be0a2b]" name="teardown" is-config="true" duration-ms="3482" started-at="2020-11-02T12:03:51Z" finished-at="2020-11-02T12:03:54Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.gmail.testCases.TC_DraftandSendMail_003@70be0a2b]" name="teardown" is-config="true" duration-ms="15586" started-at="2020-11-02T15:25:23Z" finished-at="2020-11-02T15:25:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
