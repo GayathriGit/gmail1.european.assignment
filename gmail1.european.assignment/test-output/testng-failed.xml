@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="TestCase_Name2" value="TC_ReplyMail_002"/>
+  <parameter name="TestCase_Name3" value="TC_DraftandSendMail_003"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="TestCase_Name1" value="TC_ComposeMail_001"/>
+  <listeners>
+    <listener class-name="com.gmail.ReportConfiguration.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Test2(failed)">
+    <classes>
+      <class name="com.gmail.testCases.TC_DraftandSendMail_003">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialSetup"/>
+          <include name="setup"/>
+          <include name="composeMail" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.gmail.testCases.TC_DraftandSendMail_003 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

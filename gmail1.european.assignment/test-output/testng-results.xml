@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="366960" started-at="2020-11-02T11:57:47Z" finished-at="2020-11-02T12:03:54Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="134198" started-at="2020-11-02T11:57:47Z" finished-at="2020-11-02T12:00:02Z">
+      <class name="com.gmail.testCases.TC_ComposeMail_001">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.gmail.testCases.TC_ComposeMail_001@327b636c]" name="setup" is-config="true" duration-ms="7658" started-at="2020-11-02T11:57:47Z" finished-at="2020-11-02T11:57:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TC_ReplyMail_002]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@4f4c789f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="composeMail(java.lang.String)[pri:0, instance:com.gmail.testCases.TC_ComposeMail_001@327b636c]" name="composeMail" duration-ms="122506" started-at="2020-11-02T11:57:55Z" finished-at="2020-11-02T11:59:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_ComposeMail_001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- composeMail -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.gmail.testCases.TC_ComposeMail_001@327b636c]" name="teardown" is-config="true" duration-ms="3331" started-at="2020-11-02T11:59:58Z" finished-at="2020-11-02T12:00:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.gmail.testCases.TC_ComposeMail_001 -->
+    </test> <!-- Test -->
+    <test name="Test1" duration-ms="83822" started-at="2020-11-02T12:00:02Z" finished-at="2020-11-02T12:01:26Z">
+      <class name="com.gmail.testCases.TC_ReplyMail_002">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.gmail.testCases.TC_ReplyMail_002@22635ba0]" name="setup" is-config="true" duration-ms="10130" started-at="2020-11-02T12:00:02Z" finished-at="2020-11-02T12:00:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TC_ReplyMail_002]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@13f9ad9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="replyMail(java.lang.String)[pri:0, instance:com.gmail.testCases.TC_ReplyMail_002@22635ba0]" name="replyMail" duration-ms="70703" started-at="2020-11-02T12:00:12Z" finished-at="2020-11-02T12:01:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_ReplyMail_002]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- replyMail -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.gmail.testCases.TC_ReplyMail_002@22635ba0]" name="teardown" is-config="true" duration-ms="2466" started-at="2020-11-02T12:01:23Z" finished-at="2020-11-02T12:01:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.gmail.testCases.TC_ReplyMail_002 -->
+    </test> <!-- Test1 -->
+    <test name="Test2" duration-ms="148259" started-at="2020-11-02T12:01:26Z" finished-at="2020-11-02T12:03:54Z">
+      <class name="com.gmail.testCases.TC_DraftandSendMail_003">
+        <test-method status="PASS" signature="intialSetup()[pri:0, instance:com.gmail.testCases.TC_DraftandSendMail_003@70be0a2b]" name="intialSetup" is-config="true" duration-ms="381" started-at="2020-11-02T11:57:47Z" finished-at="2020-11-02T11:57:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialSetup -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.gmail.testCases.TC_DraftandSendMail_003@70be0a2b]" name="setup" is-config="true" duration-ms="5923" started-at="2020-11-02T12:01:26Z" finished-at="2020-11-02T12:01:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TC_ReplyMail_002]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b7cae6f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="composeMail(java.lang.String)[pri:0, instance:com.gmail.testCases.TC_DraftandSendMail_003@70be0a2b]" name="composeMail" duration-ms="138298" started-at="2020-11-02T12:01:32Z" finished-at="2020-11-02T12:03:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC_DraftandSendMail_003]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- composeMail -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.gmail.testCases.TC_DraftandSendMail_003@70be0a2b]" name="teardown" is-config="true" duration-ms="3482" started-at="2020-11-02T12:03:51Z" finished-at="2020-11-02T12:03:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.gmail.testCases.TC_DraftandSendMail_003 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>

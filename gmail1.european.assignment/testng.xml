@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <listeners>
+	<listener class-name="com.gmail.ReportConfiguration.TestListener"/>
+  </listeners>
+	
+  <parameter name="browser" value="chrome" />
+  <parameter name="TestCase_Name1" value="TC_ComposeMail_001" /> 	
+  
+  <test name="Test">
+    <classes>
+    
+      <class name="com.gmail.testCases.TC_ComposeMail_001"/>
+    </classes>
+    
+  </test>
+  
+  
+  <parameter name="browser" value="chrome" />
+  <parameter name="TestCase_Name2" value="TC_ReplyMail_002" /> 	
+  
+  <test name="Test1" >
+    <classes>
+    
+      <class name="com.gmail.testCases.TC_ReplyMail_002"/>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+  <parameter name="browser" value="chrome" />
+  <parameter name="TestCase_Name3" value="TC_DraftandSendMail_003" /> 	
+  
+  <test name="Test2" >
+    <classes>
+    
+      <class name="com.gmail.testCases.TC_DraftandSendMail_003"/>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
